@@ -341,7 +341,7 @@ const Gallery = () => {
       <section className="py-16 md:py-24 glossy-surface">
         <div className="container mx-auto px-4 text-center max-w-3xl">
           <h2 className="font-serif text-3xl md:text-4xl text-secondary mb-6">
-            A Glimpse Into ZealAesthetics
+            A Glimpse Into Rose Beauty
           </h2>
           <div className="divider-elegant" />
           <p className="text-muted-foreground leading-relaxed">
@@ -404,14 +404,14 @@ const Gallery = () => {
         <div className="absolute inset-0 oily-sheen" />
         <div className="container mx-auto px-4 text-center relative z-10">
           <h2 className="font-serif text-4xl md:text-5xl mb-6">
-            Ready to Experience ZealAesthetics?
+            Ready to Experience Rose Beauty?
           </h2>
           <p className="text-white/70 mb-8 max-w-2xl mx-auto">
             Book a treatment or inquire about our training programs today. 
             Your journey to beauty and excellence starts here.
           </p>
           <a
-            href="https://wa.me/2349015012285?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment"
+            href="https://wa.me/2348103127217?text=Hello%20Rose%20Beauty%2C%20I%20would%20like%20to%20book%20a%20treatment"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-luxury bg-white text-secondary"
