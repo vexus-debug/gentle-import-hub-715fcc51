@@ -5,12 +5,10 @@ import homeMassage from "@/assets/rose/hero-home-massage.jpg";
 import couples from "@/assets/rose/hero-couples.jpg";
 import hotel from "@/assets/rose/hero-hotel-spa.jpg";
 import manicure from "@/assets/rose/manicure.jpg";
-import pedicure from "@/assets/rose/pedicure.jpg";
 import bodyTreatment from "@/assets/rose/body-treatment.jpg";
 import surprise from "@/assets/rose/surprise.jpg";
-import events from "@/assets/rose/events.jpg";
 
-export type ServiceCategory = "Massage" | "Beauty" | "Body Care" | "Packages";
+export type ServiceCategory = "Massage" | "Beauty & Body" | "Other";
 
 export interface Service {
   slug: string;
@@ -31,28 +29,70 @@ export interface Service {
 
 export const services: Service[] = [
   {
-    slug: "swedish-massage",
-    name: "Swedish Massage",
+    slug: "lingam-massage",
+    name: "Lingam Massage",
     category: "Massage",
-    summary: "Long, flowing strokes that switch your body out of stress mode.",
+    summary: "A slow, tantric-style ritual focused on release and deep relaxation.",
     intro:
-      "The treatment most people mean when they say they need a massage. Warm oil, steady flowing strokes and light-to-medium pressure that loosens tight muscles and settles your nervous system. It is the easiest place to start if you have never booked a massage before.",
+      "A calm, unhurried tantric-style treatment built around breathing, warm oil and slow intentional strokes. Boundaries are agreed before anything begins and the session stays entirely within them. Discretion is standard.",
     bestFor: [
-      "General stress and a busy Lagos week",
-      "First-time massage clients",
-      "Poor sleep and restlessness",
-      "Recovery after long hours sitting or driving",
+      "Deep stress release",
+      "Reconnecting with your body",
+      "Anyone curious about tantric-style bodywork",
     ],
     whatToExpect: [
-      "Your therapist arrives with a professional couch, fresh linen, towels and oils.",
-      "A short chat about pressure, problem areas and anything you would rather we avoid.",
-      "Full-body work with you covered at all times, only the area being worked on exposed.",
-      "Water, a few quiet minutes, and your space put back exactly as we found it.",
+      "A private conversation about comfort and boundaries first.",
+      "Warm oil, slow breathing and unhurried pacing throughout.",
+      "A quiet finish with time to rest.",
     ],
     duration: "60 or 90 minutes",
-    image: swedish,
-    imageAlt: "Therapist performing a relaxing Swedish massage with warm oil",
-    seoPhrase: "Swedish massage in Lagos, at home",
+    image: homeMassage,
+    imageAlt: "Candlelit massage setup prepared for a slow tantric-style session",
+    seoPhrase: "lingam massage in Lagos, at home",
+  },
+  {
+    slug: "yoni-massage",
+    name: "Yoni Massage",
+    category: "Massage",
+    summary: "A gentle, respectful ritual centred on relaxation and body awareness.",
+    intro:
+      "A soothing tantric-style treatment for women, built on consent, warmth and slow pacing. Your therapist agrees every boundary with you first, and the session never moves beyond what you have asked for.",
+    bestFor: [
+      "Tension held in the body",
+      "Reconnecting with your body after a hard season",
+      "Anyone who wants a calm, respectful ritual",
+    ],
+    whatToExpect: [
+      "A private, unrushed conversation about boundaries.",
+      "Warm oil, breathwork and gentle, slow strokes.",
+      "Complete discretion, before and after.",
+    ],
+    duration: "60 or 90 minutes",
+    image: couples,
+    imageAlt: "Softly lit treatment space prepared for a gentle ritual massage",
+    seoPhrase: "yoni massage in Lagos, at home",
+  },
+  {
+    slug: "nuru-massage",
+    name: "Nuru Massage",
+    category: "Massage",
+    summary: "Full body-to-body glide work using warm, silky nuru gel.",
+    intro:
+      "A Japanese-origin technique using a warm, odourless seaweed gel that makes every stroke glide. The whole body is used to apply pressure, which is why it feels quite unlike a hands-only massage. Everything is agreed with you in advance.",
+    bestFor: [
+      "Something completely different from a standard massage",
+      "Deep, full-body relaxation",
+      "Couples' treat days",
+    ],
+    whatToExpect: [
+      "A boundaries conversation before the session begins.",
+      "Warm nuru gel and a fully protected surface.",
+      "Long, continuous glide strokes over the full body.",
+    ],
+    duration: "60 or 90 minutes",
+    image: hotel,
+    imageAlt: "Warm oils and towels prepared for a nuru gel massage",
+    seoPhrase: "nuru massage in Lagos, at home",
   },
   {
     slug: "deep-tissue-massage",
@@ -78,6 +118,52 @@ export const services: Service[] = [
     seoPhrase: "deep tissue massage in Lagos, at home",
   },
   {
+    slug: "swedish-massage",
+    name: "Swedish Massage",
+    category: "Massage",
+    summary: "Long, flowing strokes that switch your body out of stress mode.",
+    intro:
+      "The treatment most people mean when they say they need a massage. Warm oil, steady flowing strokes and light-to-medium pressure that loosens tight muscles and settles your nervous system. It is the easiest place to start if you have never booked a massage before.",
+    bestFor: [
+      "General stress and a busy Lagos week",
+      "First-time massage clients",
+      "Poor sleep and restlessness",
+      "Recovery after long hours sitting or driving",
+    ],
+    whatToExpect: [
+      "Your therapist arrives with a professional couch, fresh linen, towels and oils.",
+      "A short chat about pressure, problem areas and anything you would rather we avoid.",
+      "Full-body work with you covered at all times, only the area being worked on exposed.",
+      "Water, a few quiet minutes, and your space put back exactly as we found it.",
+    ],
+    duration: "60 or 90 minutes",
+    image: swedish,
+    imageAlt: "Therapist performing a relaxing Swedish massage with warm oil",
+    seoPhrase: "Swedish massage in Lagos, at home",
+  },
+  {
+    slug: "lymphatic-massage",
+    name: "Lymphatic Massage",
+    category: "Massage",
+    summary: "Light, rhythmic drainage work to reduce puffiness and heaviness.",
+    intro:
+      "A very gentle, rhythmic technique that encourages fluid movement through the body. Nothing about it is forceful — the pressure is light on purpose. Often requested for swollen legs, bloating and that generally heavy, sluggish feeling.",
+    bestFor: [
+      "Puffy legs, ankles and general water retention",
+      "Long flights and long days on your feet",
+      "Post-procedure recovery where your doctor has cleared massage",
+    ],
+    whatToExpect: [
+      "A calm, unhurried session with very light pressure.",
+      "Slow directional strokes towards the body's drainage points.",
+      "Advice on hydration and simple movement afterwards.",
+    ],
+    duration: "60 or 90 minutes",
+    image: homeMassage,
+    imageAlt: "Gentle lymphatic drainage massage in a client's home",
+    seoPhrase: "lymphatic drainage massage in Lagos",
+  },
+  {
     slug: "hot-stone-massage",
     name: "Hot Stone Massage",
     category: "Massage",
@@ -101,26 +187,26 @@ export const services: Service[] = [
     seoPhrase: "hot stone massage in Lagos, at home",
   },
   {
-    slug: "lymphatic-massage",
-    name: "Lymphatic Massage",
+    slug: "four-hands-massage",
+    name: "Four Hands Massage",
     category: "Massage",
-    summary: "Light, rhythmic drainage work to reduce puffiness and heaviness.",
+    summary: "Two therapists, perfectly synchronised. The most indulgent thing on our list.",
     intro:
-      "A very gentle, rhythmic technique that encourages fluid movement through the body. Nothing about it is forceful — the pressure is light on purpose. Often requested for swollen legs, bloating and that generally heavy, sluggish feeling.",
+      "Two therapists work on you at the same time in mirrored movements. Because your mind cannot track both pairs of hands, it gives up trying — and that is exactly why people describe it as the deepest switch-off they have had.",
     bestFor: [
-      "Puffy legs, ankles and general water retention",
-      "Long flights and long days on your feet",
-      "Post-procedure recovery where your doctor has cleared massage",
+      "Birthdays, anniversaries and rare treat days",
+      "People who find it hard to properly relax",
+      "Anyone who wants a full-body result in less time",
     ],
     whatToExpect: [
-      "A calm, unhurried session with very light pressure.",
-      "Slow directional strokes towards the body's drainage points.",
-      "Advice on hydration and simple movement afterwards.",
+      "Two therapists arrive together, with one shared consultation.",
+      "Synchronised full-body work at the pressure you choose.",
+      "Advance booking recommended so both therapists are free.",
     ],
     duration: "60 or 90 minutes",
-    image: homeMassage,
-    imageAlt: "Gentle lymphatic drainage massage in a client's home",
-    seoPhrase: "lymphatic drainage massage in Lagos",
+    image: couples,
+    imageAlt: "Two therapists performing a synchronised four hands massage",
+    seoPhrase: "four hands massage in Lagos",
   },
   {
     slug: "back-massage",
@@ -167,77 +253,32 @@ export const services: Service[] = [
     seoPhrase: "targeted spot massage in Lagos",
   },
   {
-    slug: "four-hands-massage",
-    name: "Four Hands Massage",
-    category: "Massage",
-    summary: "Two therapists, perfectly synchronised. The most indulgent thing on our list.",
+    slug: "pedicure-manicure",
+    name: "Pedicure / Manicure",
+    category: "Beauty & Body",
+    summary: "Salon-standard hands and feet, done in your own space.",
     intro:
-      "Two therapists work on you at the same time in mirrored movements. Because your mind cannot track both pairs of hands, it gives up trying — and that is exactly why people describe it as the deepest switch-off they have had.",
-    bestFor: [
-      "Birthdays, anniversaries and rare treat days",
-      "People who find it hard to properly relax",
-      "Anyone who wants a full-body result in less time",
-    ],
-    whatToExpect: [
-      "Two therapists arrive together, with one shared consultation.",
-      "Synchronised full-body work at the pressure you choose.",
-      "Advance booking recommended so both therapists are free.",
-    ],
-    duration: "60 or 90 minutes",
-    image: couples,
-    imageAlt: "Two therapists performing a synchronised four hands massage",
-    seoPhrase: "four hands massage in Lagos",
-  },
-  {
-    slug: "manicure",
-    name: "Manicure",
-    category: "Beauty",
-    summary: "Salon-standard nails at your dining table, with your own kettle nearby.",
-    intro:
-      "Shaping, cuticle care, a hand massage and a clean finish — regular polish or gel. All tools are sanitised, and disposables are used where they should be. No salon queue, no waiting for a free chair.",
+      "Shaping, cuticle care, heel and callus work, a hand or foot massage and a clean polish or gel finish. All tools are sanitised and disposables are used where they should be. No salon queue, no waiting for a free chair.",
     bestFor: [
       "Busy work weeks and school runs",
-      "Getting ready for an event at home",
+      "Weddings, events and holidays",
       "Booking together with a friend or your partner",
     ],
     whatToExpect: [
-      "Soak, shape, cuticle care and buff.",
-      "A hand and forearm massage with cream or oil.",
-      "Polish or gel in the colour you choose.",
-      "Everything cleared away before we leave.",
+      "A warm soak set up wherever you are comfortable.",
+      "Shaping, cuticle care, heel and callus work.",
+      "Hand or foot and calf massage.",
+      "Polish or gel in your colour, then a full clean-up.",
     ],
-    duration: "45 to 60 minutes",
+    duration: "45 to 90 minutes",
     image: manicure,
-    imageAlt: "Elegant manicure with a natural polish finish",
-    seoPhrase: "home manicure in Lagos",
+    imageAlt: "Elegant manicure and pedicure with a natural polish finish",
+    seoPhrase: "home manicure and pedicure in Lagos",
   },
   {
-    slug: "pedicure",
-    name: "Pedicure",
-    category: "Beauty",
-    summary: "A proper foot soak, scrub and polish while you sit on your own sofa.",
-    intro:
-      "Warm soak, careful heel and callus work, nail shaping, a foot and calf massage, then polish. The part most people skip until their feet complain — done properly, in your own space.",
-    bestFor: [
-      "Dry, cracked heels and tired feet",
-      "Weddings, events and holidays",
-      "Pairing with a manicure for a full reset",
-    ],
-    whatToExpect: [
-      "A warm soak with salts, set up wherever you are comfortable.",
-      "Heel, callus, nail and cuticle care.",
-      "Foot and calf massage.",
-      "Polish or gel, then a full clean-up.",
-    ],
-    duration: "60 minutes",
-    image: pedicure,
-    imageAlt: "Relaxing home pedicure foot soak with flower petals",
-    seoPhrase: "home pedicure in Lagos",
-  },
-  {
-    slug: "body-treatments",
-    name: "Body Treatments",
-    category: "Body Care",
+    slug: "body-treatment",
+    name: "Body Treatment",
+    category: "Beauty & Body",
     summary: "Scrubs, polishes and wraps for skin that feels neglected.",
     intro:
       "Full-body exfoliation and nourishing treatments that leave skin smoother and evenly hydrated. Choose a scrub and polish, or add a wrap for a longer, more indulgent session. Tell us your skin type when you book and we bring products to match.",
@@ -257,31 +298,9 @@ export const services: Service[] = [
     seoPhrase: "home body scrub and body treatment in Lagos",
   },
   {
-    slug: "couples-spa",
-    name: "Couples Spa Experience",
-    category: "Packages",
-    summary: "Two therapists, two treatments, side by side in your own space.",
-    intro:
-      "You and your partner are treated at the same time, in the same room, by two therapists. We bring everything — couches, linen, candles and oils — and set the room up before you walk in. Popular for anniversaries, birthdays and Sunday resets.",
-    bestFor: [
-      "Anniversaries, birthdays and proposals",
-      "Couples with clashing schedules",
-      "Hotel staycations in Lagos",
-    ],
-    whatToExpect: [
-      "Two therapists arrive early to set the room.",
-      "Each of you chooses your own treatment and pressure.",
-      "Simultaneous treatments, then quiet time together.",
-    ],
-    duration: "60 or 90 minutes each",
-    image: couples,
-    imageAlt: "Couples spa experience with two massage couches set up side by side",
-    seoPhrase: "couples spa and couples massage in Lagos",
-  },
-  {
-    slug: "surprise-packages",
-    name: "Surprise Packages",
-    category: "Packages",
+    slug: "surprise-package",
+    name: "Surprise Package",
+    category: "Other",
     summary: "Gift a spa day that turns up at their door. We handle the surprise.",
     intro:
       "Tell us who it is for, roughly what they enjoy and the moment you want to create. We plan the treatment, bring the set-up and arrive at the time you choose — birthdays, anniversaries, new mums, or a friend who has had a hard month.",
@@ -297,82 +316,15 @@ export const services: Service[] = [
     ],
     duration: "Planned around the occasion",
     image: surprise,
-    imageAlt: "Elegant purple and gold spa gift box with towels, oil and a candle",
+    imageAlt: "Elegant spa gift box with towels, oil and a candle",
     seoPhrase: "spa gift and surprise spa package in Lagos",
-  },
-  {
-    slug: "beauty-wellness-packages",
-    name: "Beauty & Wellness Packages",
-    category: "Packages",
-    summary: "Massage, nails and body care combined into one longer visit.",
-    intro:
-      "Instead of booking three separate appointments, combine them. A common package is a massage, a manicure and a pedicure in a single visit — one therapist team, one arrival, one relaxed afternoon.",
-    bestFor: [
-      "A full self-care day without leaving home",
-      "Pre-wedding and pre-event preparation",
-      "Regular monthly upkeep",
-    ],
-    whatToExpect: [
-      "We plan the order of treatments so nothing gets rushed.",
-      "A single set-up and a single arrival window.",
-      "Package pricing confirmed on WhatsApp before you commit.",
-    ],
-    duration: "2 to 4 hours",
-    image: bodyTreatment,
-    imageAlt: "Beauty and wellness package products laid out ready for a session",
-    seoPhrase: "beauty and wellness packages in Lagos",
-  },
-  {
-    slug: "hotel-spa-services",
-    name: "Hotel Spa Services",
-    category: "Packages",
-    summary: "In-room spa treatments wherever you are staying in Lagos.",
-    intro:
-      "Staying in a hotel, short-let or serviced apartment? We come to your room. Your therapist arrives discreetly, in uniform, with everything needed, and works around your schedule — including late arrivals after a long flight or a full day of meetings.",
-    bestFor: [
-      "Business travellers and long-haul arrivals",
-      "Staycations and hotel weekends",
-      "Guests staying in short-lets and serviced apartments",
-    ],
-    whatToExpect: [
-      "We confirm your hotel's guest policy with you beforehand.",
-      "Discreet, uniformed arrival at reception.",
-      "Full set-up and complete clean-up in your room.",
-    ],
-    duration: "30 to 120 minutes",
-    image: hotel,
-    imageAlt: "Massage couch set up in a luxury hotel suite with a city view",
-    seoPhrase: "hotel spa services and in-room massage in Lagos",
-  },
-  {
-    slug: "event-and-group-treatments",
-    name: "Event & Group Treatments",
-    category: "Packages",
-    summary: "Spa treatments for bridal parties, offices and private events.",
-    intro:
-      "We bring a team to your event. Chair massages for a corporate wellness day, nails for a bridal party, or short treatments rotating through guests at a private celebration. Tell us the guest count and the time window and we plan the rotation.",
-    bestFor: [
-      "Corporate wellness days and staff appreciation",
-      "Bridal parties and baby showers",
-      "Birthdays and private celebrations",
-    ],
-    whatToExpect: [
-      "A planning conversation about guests, space and timing.",
-      "A therapist team sized to your guest list.",
-      "A treatment schedule so no guest is left waiting.",
-    ],
-    duration: "Planned around your event",
-    image: events,
-    imageAlt: "Seated chair massage at a corporate wellness event",
-    seoPhrase: "event and corporate massage services in Lagos",
   },
 ];
 
 export const serviceCategories: { name: ServiceCategory; blurb: string }[] = [
-  { name: "Massage", blurb: "Seven techniques, chosen around how your body actually feels." },
-  { name: "Beauty", blurb: "Hands and feet cared for properly, without a salon trip." },
-  { name: "Body Care", blurb: "Exfoliation and nourishing treatments for smoother skin." },
-  { name: "Packages", blurb: "Couples, gifts, hotels and events — planned with you." },
+  { name: "Massage", blurb: "Ten techniques, chosen around how your body actually feels." },
+  { name: "Beauty & Body", blurb: "Hands, feet and skin cared for properly, without a salon trip." },
+  { name: "Other", blurb: "Planned with you, for the moment you want to create." },
 ];
 
 export const getService = (slug?: string) =>
