@@ -15,8 +15,8 @@ const BookingForm = () => {
   const [selected, setSelected] = useState<string[]>([]);
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
-  const [locationType, setLocationType] = useState(site.locationTypes[0]);
-  const [area, setArea] = useState(site.areas[0]);
+  const [locationType, setLocationType] = useState<string>(site.locationTypes[0]);
+  const [area, setArea] = useState<string>(site.areas[0]);
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
   const [notes, setNotes] = useState("");
