@@ -407,7 +407,7 @@ const Gallery = () => {
             Ready to Experience Rose Beauty?
           </h2>
           <p className="text-white/70 mb-8 max-w-2xl mx-auto">
-            Book a treatment or inquire about our training programs today. 
+            Book a treatment today — we come to you anywhere in Lagos, with at least 24 hours’ notice.
             Your journey to beauty and excellence starts here.
           </p>
           <a
