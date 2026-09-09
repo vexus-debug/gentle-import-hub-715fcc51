@@ -8,9 +8,9 @@ export const site = {
   country: "Nigeria",
 
   // Contact
-  phoneDisplay: "081 031 272 217",
-  phoneHref: "tel:081031272217",
-  whatsappNumber: "23481031272217",
+  phoneDisplay: "0810 312 7217",
+  phoneHref: "tel:+2348103127217",
+  whatsappNumber: "2348103127217",
   email: "Roselynelijah8@gmail.com",
 
   // Availability
